@@ -64,3 +64,6 @@ DrawTextEx :: proc(font: rl.Font, text: string, position: rl.Vector2, fontSize: 
         i += codepointByteCount; // Move text bytes counter to next codepoint
     }
 }
+
+
+// Nice.
