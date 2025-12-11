@@ -62,7 +62,6 @@ DrawTextEx :: proc(font: rl.Font, text: string, position: rl.Vector2, fontSize: 
     }
 }
 
-
 // Nice.
 
 Window :: distinct bool
