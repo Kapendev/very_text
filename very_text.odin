@@ -10,12 +10,12 @@ package com_kapendev_very_text
 import rl "vendor:raylib"
 import io "core:fmt"
 
+int :: i32
+
 when true {
-    // SPDX-License-Identifier: MIT
     main :: proc() {
         beginWindow(1280, 720)
-        for {
-            beginLoop() or_break
+        for { beginLoop() or_break
 		    rl.DrawRectangle(rl.GetMouseX(), rl.GetMouseY(), 32, 32, rl.PINK)
             rl.DrawText("Hello", 32, 32, 60, rl.BLUE) // The **SLOW** raylib version.
 		    DrawTextEx({}, "Hello", {32, 90}, 60)     // The memory safe and blazing fast Odin version.
@@ -23,7 +23,6 @@ when true {
     }
 }
 
-// SPDX-License-Identifier: MIT
 DrawTextEx :: proc(font: rl.Font, text: string, position: rl.Vector2, fontSize: f32, spacing: f32 = 6, tint: rl.Color = rl.WHITE, textLineSpacing: i32 = 2) {
     font := font
     
