@@ -18,7 +18,7 @@ when true {
         for { beginLoop() or_break
 		    rl.DrawRectangle(rl.GetMouseX(), rl.GetMouseY(), 32, 32, rl.PINK)
             rl.DrawText("Hello", 32, 32, 60, rl.BLUE) // The **SLOW** raylib version.
-		    DrawTextEx({}, "Hello", {32, 90}, 60)     // The memory safe and blazing fast Odin version.
+            DrawTextEx({}, "Hello", {32, 90}, 60)     // The memory safe and blazing fast Odin version.
 	    }
     }
 }
