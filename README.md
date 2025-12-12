@@ -2,6 +2,8 @@
 
 A blazing fast and memory safe `DrawText` library for raylib and the [ODIN programming language](https://dlang.org/)..............
 
+The library is now production-ready!
+
 ## Why very_text 👉👈
 
 * Minimalistic: Avoids abstractions
